@@ -184,7 +184,7 @@ head.delete()
 
 ### 取出最小/最大堆元素
 
-`TreeNode.prototype.value[0]`
+`Heap.prototype.value[0]`
 
 ```js
 head.value[0]

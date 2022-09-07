@@ -212,7 +212,7 @@ head.delete()
 
 ### get the minimum/maximum element
 
-`TreeNode.prototype.value[0]`
+`Heap.prototype.value[0]`
 
 ```js
 head.value[0]

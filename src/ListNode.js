@@ -1,7 +1,7 @@
 class ListNode {
-    constructor(val) {
-        this.val = val
-        this.next = null
+    constructor(val, next) {
+        this.val = val??0;
+        this.next = next??null;
     }
     /**
      * @static
@@ -10,12 +10,12 @@ class ListNode {
      * @memberof ListNode
      */
     static create(arr) {
-        if (!Array.isArray(arr)) return null
-        const res = new ListNode(null)
-        let temp = res
+        if (!Array.isArray(arr)) return null;
+        const res = new ListNode(null);
+        let temp = res;
         for (let i = 0, len = arr.length; i < len; i++)
-            temp = temp.next = new ListNode(arr[i])
-        return res.next
+            temp = temp.next = new ListNode(arr[i]);
+        return res.next;
     }
     /**
      * @static
@@ -33,14 +33,14 @@ class ListNode {
             !secondArr.length ||
             !Array.isArray(IntersectArr)
         )
-            return null
+            return null;
         const f = ListNode.create(firstArr),
             s = ListNode.create(secondArr),
             ff = f.getLast(),
             ss = s.getLast(),
-            i = ListNode.create(IntersectArr)
-        ff.next = ss.next = i
-        return [f, s]
+            i = ListNode.create(IntersectArr);
+        ff.next = ss.next = i;
+        return [f, s];
     }
     /**
      * @static
@@ -49,44 +49,44 @@ class ListNode {
      * @memberof ListNode
      */
     static show(root) {
-        if (!(root instanceof ListNode)) return []
-        const res = []
-        let temp = root
+        if (!(root instanceof ListNode)) return [];
+        const res = [];
+        let temp = root;
         while (temp) {
-            res.push(temp.val)
-            temp = temp.next
+            res.push(temp.val);
+            temp = temp.next;
         }
-        return res
+        return res;
     }
     /**
      * @returns {Array}
      * @memberof ListNode
      */
     show() {
-        if (!(this instanceof ListNode)) return []
-        const res = []
-        let temp = this
+        if (!(this instanceof ListNode)) return [];
+        const res = [];
+        let temp = this;
         while (temp) {
-            res.push(temp.val)
-            temp = temp.next
+            res.push(temp.val);
+            temp = temp.next;
         }
-        return res
+        return res;
     }
     /**
      * 可视化展示
      * @memberof ListNode
      */
     visualShow() {
-        console.log(ListNode.show(this).join(' -> '))
+        console.log(ListNode.show(this).join(" -> "));
     }
     /**
      * @returns {ListNode}
      * @memberof ListNode
      */
     getLast() {
-        let root = this
-        while (root.next) root = root.next
-        return root
+        let root = this;
+        while (root.next) root = root.next;
+        return root;
     }
     /**
      * @static
@@ -98,9 +98,9 @@ class ListNode {
         const arr = Array(n)
             .fill(0)
             .map((v, i) => i + 1)
-            .sort(() => Math.random() < 0.5)
-        return ListNode.create(arr)
+            .sort(() => Math.random() < 0.5);
+        return ListNode.create(arr);
     }
 }
 
-module.exports = ListNode
+module.exports = ListNode;
