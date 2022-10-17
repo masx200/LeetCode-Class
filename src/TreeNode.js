@@ -12,6 +12,7 @@ class TreeNode {
      */
     static create(arr) {
         if (!Array.isArray(arr)) return null;
+        if (arr.length === 0) return null;
         const res = new TreeNode(arr[0]);
         let temp = [res];
         for (let i = 1, len = arr.length; i < len; i += 2) {

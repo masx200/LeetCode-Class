@@ -1,6 +1,7 @@
 import { test, assert } from "vitest";
 import { TreeNode } from "../index";
 test("tree node", () => {
+    assert.equal(null,TreeNode.create([]))
     assert.deepEqual(
         TreeNode.create([1, 2, 3]),
         new TreeNode(1, new TreeNode(2), new TreeNode(3))
