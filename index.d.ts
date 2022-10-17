@@ -29,6 +29,7 @@ export class Employee {
     subordinates: number[];
 }
 export class TreeNode<T = any> {
+    show<T = any>(): Array<T>;
     static create<T = any>(arr: Array<T>): TreeNode<T>;
     static show<T = any>(root: TreeNode<T> | null): Array<T>;
     constructor(val?: T, left?: TreeNode<T> | null, right?: TreeNode<T> | null);

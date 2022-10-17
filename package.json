@@ -8,7 +8,7 @@
         "example": "example"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "vitest run"
     },
     "repository": {
         "type": "git",
@@ -25,5 +25,8 @@
         "constructor"
     ],
     "homepage": "https://github.com/masx200/LeetCode-Class#readme",
-    "dependencies": {}
+    "dependencies": {},
+    "devDependencies": {
+        "vitest": "^0.24.3"
+    }
 }
