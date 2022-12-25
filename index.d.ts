@@ -1,4 +1,3 @@
-//declare module 'leetcode-class' {
 export class ListNode<T = any> {
     static create<T = any>(arr: Array<T>): ListNode<T>;
     static show<T = any>(root: ListNode<T> | null): Array<T>;
@@ -42,15 +41,14 @@ export class Heap<T = any> {
     constructor(
         initialArray: T[],
         valueFunction: (element: T) => number,
-        isMaxHeap: boolean /* = false */
+        isMaxHeap: boolean
     );
     add(element: T): number;
     delete(): T | null;
     value: Array<T>;
 }
 export function runScript(
-    commonds: String[],
+    commands: string[],
     inputs: any[][],
-    classes: any[] | any
+    classes: any
 ): any[];
-// }
