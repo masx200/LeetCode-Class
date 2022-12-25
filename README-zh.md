@@ -85,8 +85,8 @@ const interval = new Interval(1, 3);
 
 ```js
 const intervals = Interval.createList([
-  [1, 2],
-  [3, 4],
+    [1, 2],
+    [3, 4],
 ]);
 ```
 
@@ -107,8 +107,8 @@ Interval.show(interval);
 
 ```js
 const intervals = Interval.createList([
-  [1, 2],
-  [3, 4],
+    [1, 2],
+    [3, 4],
 ]);
 
 Interval.showList(intervals);
@@ -191,12 +191,12 @@ For example:
 
 ```js
 const heap = new Heap(
-  [
-    { val: 2, name: "b" },
-    { val: 1, name: "a" },
-  ],
-  (element) => element.val,
-  false
+    [
+        { val: 2, name: "b" },
+        { val: 1, name: "a" },
+    ],
+    (element) => element.val,
+    false
 );
 ```
 
@@ -241,26 +241,43 @@ head.value[0];
 // inputs 所对应执行的参数
 // classes 对应执行类数组(毕竟跨作用域了)
 runScript(
-  [
-    "DinnerPlates",
-    "push",
-    "push",
-    "push",
-    "push",
-    "push",
-    "popAtStack",
-    "push",
-    "push",
-    "popAtStack",
-    "popAtStack",
-    "pop",
-    "pop",
-    "pop",
-    "pop",
-    "pop",
-  ],
-  [[2], [1], [2], [3], [4], [5], [0], [20], [21], [0], [2], [], [], [], [], []],
-  [DinnerPlates]
+    [
+        "DinnerPlates",
+        "push",
+        "push",
+        "push",
+        "push",
+        "push",
+        "popAtStack",
+        "push",
+        "push",
+        "popAtStack",
+        "popAtStack",
+        "pop",
+        "pop",
+        "pop",
+        "pop",
+        "pop",
+    ],
+    [
+        [2],
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [0],
+        [20],
+        [21],
+        [0],
+        [2],
+        [],
+        [],
+        [],
+        [],
+        [],
+    ],
+    [DinnerPlates]
 );
 
 // 详见example示例

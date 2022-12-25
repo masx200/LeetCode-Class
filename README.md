@@ -87,8 +87,8 @@ const interval = new Interval(1, 3);
 
 ```js
 const intervals = Interval.createList([
-  [1, 2],
-  [3, 4],
+    [1, 2],
+    [3, 4],
 ]);
 ```
 
@@ -109,8 +109,8 @@ Transform Intervals to arrays: `Interval.showList() : Array[]`
 
 ```js
 const intervals = Interval.createList([
-  [1, 2],
-  [3, 4],
+    [1, 2],
+    [3, 4],
 ]);
 
 Interval.showList(intervals);
@@ -192,12 +192,12 @@ For example:
 
 ```js
 const heap = new Heap(
-  [
-    { val: 2, name: "b" },
-    { val: 1, name: "a" },
-  ],
-  (element) => element.val,
-  false
+    [
+        { val: 2, name: "b" },
+        { val: 1, name: "a" },
+    ],
+    (element) => element.val,
+    false
 );
 ```
 
@@ -242,26 +242,43 @@ Execute input parameters in a certain order
 // inputs : Corresponding execution parameters
 // classes : Corresponding execution class array
 runScript(
-  [
-    "DinnerPlates",
-    "push",
-    "push",
-    "push",
-    "push",
-    "push",
-    "popAtStack",
-    "push",
-    "push",
-    "popAtStack",
-    "popAtStack",
-    "pop",
-    "pop",
-    "pop",
-    "pop",
-    "pop",
-  ],
-  [[2], [1], [2], [3], [4], [5], [0], [20], [21], [0], [2], [], [], [], [], []],
-  [DinnerPlates]
+    [
+        "DinnerPlates",
+        "push",
+        "push",
+        "push",
+        "push",
+        "push",
+        "popAtStack",
+        "push",
+        "push",
+        "popAtStack",
+        "popAtStack",
+        "pop",
+        "pop",
+        "pop",
+        "pop",
+        "pop",
+    ],
+    [
+        [2],
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [0],
+        [20],
+        [21],
+        [0],
+        [2],
+        [],
+        [],
+        [],
+        [],
+        [],
+    ],
+    [DinnerPlates]
 );
 
 // see example
