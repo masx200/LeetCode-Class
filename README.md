@@ -9,7 +9,7 @@ includes `ListNode`, `TreeNode`, `Interval`, `Employee`
 ### Constructor
 
 ```js
-const node = new ListNode(val)
+const node = new ListNode(val);
 ```
 
 ### Initialize using an array
@@ -17,7 +17,7 @@ const node = new ListNode(val)
 (Follow LeetCode topic specifications): `ListNode.create(arr : Array) : ListNode`
 
 ```js
-const head = ListNode.create([1, 2, 3, 4, 5])
+const head = ListNode.create([1, 2, 3, 4, 5]);
 ```
 
 ### Visual display
@@ -25,9 +25,9 @@ const head = ListNode.create([1, 2, 3, 4, 5])
 `ListNode.prototype.visualShow() : void`
 
 ```js
-const head = ListNode.create([1, 2, 3, 4, 5])
+const head = ListNode.create([1, 2, 3, 4, 5]);
 
-head.visualShow()
+head.visualShow();
 //1 -> 2 -> 3 -> 4 -> 5
 ```
 
@@ -36,7 +36,7 @@ head.visualShow()
 (Follow LeetCode topic specifications, Example Question 160): `ListNode.createIntersectList(firstArr: Array<any>,secondArr: Array<any>IntersectArr: Array<any>) : [ListNode, ListNode]`, parameters are: first ListArray Uncrossed, second ListArray Uncrossed, crossed
 
 ```js
-const [head1, head2] = ListNode.createIntersectList([1, 2], [3, 4], [5, 6])
+const [head1, head2] = ListNode.createIntersectList([1, 2], [3, 4], [5, 6]);
 ```
 
 ### Transform ListNodes to array
@@ -44,11 +44,11 @@ const [head1, head2] = ListNode.createIntersectList([1, 2], [3, 4], [5, 6])
 `ListNode.prototype.show() : Array`
 
 ```js
-const head = ListNode.create([1, 2, 3])
+const head = ListNode.create([1, 2, 3]);
 
-head.show()
+head.show();
 // [1,2,3]
-ListNode.show(head)
+ListNode.show(head);
 // [1,2,3]
 ```
 
@@ -57,9 +57,9 @@ ListNode.show(head)
 `ListNode.prototype.getLast() : ListNode`
 
 ```js
-const head = ListNode.create([1, 2, 3])
+const head = ListNode.create([1, 2, 3]);
 
-head.getLast().show()
+head.getLast().show();
 // [3]
 ```
 
@@ -68,7 +68,7 @@ head.getLast().show()
 `ListNode.mock(n : Number) : ListNode`
 
 ```js
-const head = ListNode.mock(5)
+const head = ListNode.mock(5);
 ```
 
 ## Interval
@@ -78,7 +78,7 @@ const head = ListNode.mock(5)
 `Interval`
 
 ```js
-const interval = new Interval(1, 3)
+const interval = new Interval(1, 3);
 ```
 
 ### Initialize using an array
@@ -88,8 +88,8 @@ const interval = new Interval(1, 3)
 ```js
 const intervals = Interval.createList([
   [1, 2],
-  [3, 4]
-])
+  [3, 4],
+]);
 ```
 
 ### Transform Interval to array
@@ -97,11 +97,11 @@ const intervals = Interval.createList([
 `Interval.show() : Array`
 
 ```js
-const interval = new Interval(1, 3)
+const interval = new Interval(1, 3);
 
-interval.show()
+interval.show();
 // [1,3]
-Interval.show(interval)
+Interval.show(interval);
 // [1,3]
 ```
 
@@ -110,10 +110,10 @@ Transform Intervals to arrays: `Interval.showList() : Array[]`
 ```js
 const intervals = Interval.createList([
   [1, 2],
-  [3, 4]
-])
+  [3, 4],
+]);
 
-Interval.showList(intervals)
+Interval.showList(intervals);
 // [[1,2],[3,4]]
 ```
 
@@ -124,7 +124,7 @@ Interval.showList(intervals)
 `Employee`
 
 ```js
-const employee = new Employee(1)
+const employee = new Employee(1);
 ```
 
 (Follow LeetCode topic specifications): `Employee.createArr(arr: [number, number, number[]][]) : Employee[]`
@@ -136,7 +136,7 @@ const employee = new Employee(1)
 `TreeNode`
 
 ```js
-const node = new TreeNode(5)
+const node = new TreeNode(5);
 ```
 
 ### Initialize using an array
@@ -146,7 +146,7 @@ const node = new TreeNode(5)
 > P.S. LeetCode title specification is From top to bottom, from left to right, indispensable position fill with`null`
 
 ```js
-const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6])
+const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6]);
 ```
 
 ### Transfrom TreeNode to array
@@ -154,11 +154,11 @@ const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6])
 `TreeNode.prototype.show() : Array`
 
 ```js
-const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6])
+const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6]);
 
-head.show()
+head.show();
 // [1,2,3,null,4,null,null,5,6]
-TreeNode.show(head)
+TreeNode.show(head);
 // [1,2,3,null,4,null,null,5,6]
 ```
 
@@ -167,9 +167,9 @@ TreeNode.show(head)
 `TreeNode.prototype.visualShow() : void`
 
 ```js
-const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6])
+const head = TreeNode.create([1, 2, 3, null, 4, null, null, 5, 6]);
 
-head.visualShow()
+head.visualShow();
 // 1 -> 2
 //        ↘→ 4 -> 5
 //             ↘→ 6
@@ -183,15 +183,24 @@ head.visualShow()
 `Heap`
 
 ```js
-const heap = new Heap([2,1,0,3,4],null,false)
+const heap = new Heap([2, 1, 0, 3, 4], null, false);
 ```
 
 The first argument is inital array
 The second argument is how to get number from the element, default is null(get the value)
-For example: 
+For example:
+
 ```js
-const heap = new Heap([{val: 2, name: 'b'},{val: 1, name: 'a'}], element => element.val, false)
+const heap = new Heap(
+  [
+    { val: 2, name: "b" },
+    { val: 1, name: "a" },
+  ],
+  (element) => element.val,
+  false
+);
 ```
+
 The third parameter indicates whether it is the maximum heap, default is minimum heap
 
 ### add element
@@ -199,7 +208,7 @@ The third parameter indicates whether it is the maximum heap, default is minimum
 `Heap.prototype.add(element: T): number`
 
 ```js
-heap.add(5)
+heap.add(5);
 ```
 
 ### delete element
@@ -207,7 +216,7 @@ heap.add(5)
 `Heap.prototype.delete() : T`
 
 ```js
-head.delete()
+head.delete();
 ```
 
 ### get the minimum/maximum element
@@ -215,7 +224,7 @@ head.delete()
 `Heap.prototype.value[0]`
 
 ```js
-head.value[0]
+head.value[0];
 ```
 
 ## RunScript(For Constructor)
@@ -234,26 +243,26 @@ Execute input parameters in a certain order
 // classes : Corresponding execution class array
 runScript(
   [
-    'DinnerPlates',
-    'push',
-    'push',
-    'push',
-    'push',
-    'push',
-    'popAtStack',
-    'push',
-    'push',
-    'popAtStack',
-    'popAtStack',
-    'pop',
-    'pop',
-    'pop',
-    'pop',
-    'pop'
+    "DinnerPlates",
+    "push",
+    "push",
+    "push",
+    "push",
+    "push",
+    "popAtStack",
+    "push",
+    "push",
+    "popAtStack",
+    "popAtStack",
+    "pop",
+    "pop",
+    "pop",
+    "pop",
+    "pop",
   ],
   [[2], [1], [2], [3], [4], [5], [0], [20], [21], [0], [2], [], [], [], [], []],
   [DinnerPlates]
-)
+);
 
 // see example
 ```

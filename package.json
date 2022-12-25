@@ -1,32 +1,34 @@
 {
-    "name": "@masx200/leetcode-class",
-    "version": "1.2.6",
-    "description": "JavaScript Tools For LeetCode",
-    "main": "index.js",
-    "types": "index.d.ts",
-    "directories": {
-        "example": "example"
-    },
-    "scripts": {
-        "test": "vitest run"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/masx200/LeetCode-Class.git"
-    },
-    "author": "Chenyj",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/masx200/LeetCode-Class/issues"
-    },
-    "keywords": [
-        "leetcode",
-        "javascript",
-        "constructor"
-    ],
-    "homepage": "https://github.com/masx200/LeetCode-Class#readme",
-    "dependencies": {},
-    "devDependencies": {
-        "vitest": "^0.24.3"
-    }
+  "name": "@masx200/leetcode-class",
+  "version": "1.2.6",
+  "description": "JavaScript Tools For LeetCode",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "format": "npx prettier -w *.json *.md *.ts *.js */*.ts */*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masx200/LeetCode-Class.git"
+  },
+  "author": "Chenyj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masx200/LeetCode-Class/issues"
+  },
+  "keywords": [
+    "leetcode",
+    "javascript",
+    "constructor"
+  ],
+  "homepage": "https://github.com/masx200/LeetCode-Class#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "vitest": "^0.24.3"
+  }
 }
