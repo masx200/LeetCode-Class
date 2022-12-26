@@ -50,5 +50,5 @@ export class Heap<T = any> {
 export function runScript(
     commands: string[],
     inputs: any[][],
-    classes: any
+    classes: { (...args: any[]): any } | { new (...args: any[]): any }
 ): any[];
